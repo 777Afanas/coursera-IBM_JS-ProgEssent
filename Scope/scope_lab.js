@@ -28,3 +28,4 @@ show();
 console.log(functionVar);
 console.log(functionLet);
 console.log(functionConst);
+
