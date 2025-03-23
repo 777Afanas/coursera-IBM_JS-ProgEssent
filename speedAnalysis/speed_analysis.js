@@ -1,15 +1,18 @@
 let testText = "The quick brown fox jumps over lazy dog.";
 let startTime, endTime;
 
-function startTest() {
+function startTest() {         
     // Установите текст для теста
     document.getElementById("inputText").value = testText;
-    // Сбросьте результаты и таймер
+    // Сбросьте результаты и таймер 
     document.getElementById("output").innerHTML = ""; 
     startTime = new Date().getTime();
+
+    document.getElementById("userInput").value = ""; 
+    document.getElementById("userInput").readOnly = false;
     // Измените текст и функциональность кнопки
     var button = document.getElementById("btn");
-    button.innerHTML = "Завершить тест";
+    button.innerHTML = "Завершить тест";  
     button.onclick = endTest;     
 }
 
@@ -34,11 +37,11 @@ function endTest() {
     "<p>Общая длина: " + userTypedText.length + "</p>" +
     "<p>Набрано слов: " + typedWords + "</p>" +
     "<p>Время: " + timeElapsed.toFixed(2) + " секунд</p>" +
-    "<p>Слова в минуту (WPM): " + wpm + "</p>";
+    "<p>Слова в минуту (WPM): " + wpm + "</p>";     
     // Сбросить кнопку
     var button = document.getElementById("btn");
-    button.innerHTML = "Начать тест";
-    button.onclick = startTest;
+    // button.innerHTML = "Начать тест";     
+    button.onclick = startTest;     
     }
    
 
