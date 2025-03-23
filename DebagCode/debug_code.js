@@ -20,7 +20,7 @@ function multiply (a, b) {
     debugger;
 
     // Multiply the numbers     
-    return a * b;       
+    return a * b + a * b / a;       
 }
 
 function displayResult(result) {
