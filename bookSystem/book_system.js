@@ -1,4 +1,5 @@
 let books = [];
+let index;
 
 function addBook() {
  const bookName = document.getElementById('bookName').value;
@@ -39,8 +40,11 @@ function clearInputs() {
  document.getElementById('pagesNumber').value = '';
 }
 
-function deletebook() {
-// console.log(books[index]); 
+
+
+function deletebook(e) {
+    // console.log(e.target.index);
+console.log(books[index]); 
     // books.splice(index, 1);  
     for (let i = 0; i < books.length; i++) {
         console.log(books[i]);
