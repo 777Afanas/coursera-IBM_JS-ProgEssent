@@ -7,10 +7,19 @@
    <h1>Weather Report</h1>
   <form id="weatherForm">
     <label for="city">Enter City:</label>
-    <input type="text" id="city" name="city">
+    <input type="text" id="city" name="city" style="margin-bottom: 15px;"><br>     
     <button type="submit">Get Weather</button>
   </form>
-  <div id="weatherInfo"></div>
+  
+  <form id="weatherFormGeo"> 
+    <label for="latitude">Enter latitude:</label>
+    <input type="text" id="latitude" name="latitude" style="margin: 15px;"><br> 
+    <label for="longitude">Enter longitude:</label>
+    <input type="text" id="longitude" name="longitude" style="margin-bottom: 15px;"><br>     
+    <button type="submit">Get Weather by geocoding data</button>
+  </form>
+
+  <div id="weatherInfo"></div>   
 <script src="./weather_report.js"></script>
 </body>
 </html>
